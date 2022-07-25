@@ -19,7 +19,7 @@ class Missions extends Component {
         <div data-testid="missions">
           <Title headline="Missões" />
         </div>
-        <div>
+        <div className="mission-cards">
           {missionList}
         </div>
       </div>

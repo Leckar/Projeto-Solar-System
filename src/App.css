@@ -1,3 +1,68 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-image: url('./images/background.png');
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  margin: 2%;
   text-align: center;
+}
+
+h1 {
+  border: 3px solid gray;
+  border-radius: 0.9em;
+  box-shadow: 2px 2px 5px rgb(95, 95, 95);
+  font-size: 2em;
+  margin: 0 22.5% 2%;
+}
+
+h2 {
+  border: 3px solid gray;
+  border-radius: 0.9rem;
+  box-shadow: 2px 2px 5px rgb(95, 95, 95);
+  font-size: 1.5em;
+  margin: 3% 26%;
+}
+
+.individual-card {
+  background-color: rgb(128, 128, 128, 0%);
+  border: 3px solid gray;
+  border-radius: 0.9rem;
+  box-shadow: 2px 2px 5px rgb(95, 95, 95);
+  margin: 2% 0%;
+  transition: background-color 400ms;
+  width: 15%;
+}
+
+.individual-card:hover {
+  background-color: rgb(128, 128, 128, 70%);
+}
+
+.mission-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: space-evenly;
+}
+
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: underline;
+}
+
+.planets div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 25%;
 }
